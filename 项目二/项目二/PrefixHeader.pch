@@ -13,7 +13,10 @@
 #import "FlexibleFrame.h"
 #import "CustomTableViewCell.h"
 #import "CustomDetailView.h"
+#import "CustomButton.h"
 
+#define BASIC_COLOR [UIColor colorWithRed:48/255.0 green:68/255.0 blue:88/255.0 alpha:1];
+#define ImageWithName(name) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:name]]
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

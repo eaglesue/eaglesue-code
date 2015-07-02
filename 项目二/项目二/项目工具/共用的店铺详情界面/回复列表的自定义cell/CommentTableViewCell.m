@@ -38,7 +38,7 @@
         _backView = [[UIView alloc] initWithiPhoneFrame:CGRectMake(10, 0, 300, 70)];
         _backView.layer.cornerRadius = 10;
         _backView.backgroundColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
-        _backView.layer.masksToBounds = YES;
+//        _backView.layer.masksToBounds = YES;
     }
     return _backView;
 }
@@ -48,7 +48,7 @@
     
     if (!_userPic) {
         
-        _userPic = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 30, 30)];
+        _userPic = [[UIImageView alloc] initWithFrame:CGRectMake(10, 30, 30, 30)];
         _userPic.backgroundColor = [UIColor cyanColor];
     }
     return _userPic;
@@ -59,7 +59,7 @@
     
     if (!_userName) {
         
-        _userName = [[UILabel alloc] initWithFrame:CGRectMake(50, 10, 60, 10)];
+        _userName = [[UILabel alloc] initWithFrame:CGRectMake(50, 30, 60, 10)];
         _userName.text = @"用户姓名";
         _userName.textAlignment = NSTextAlignmentLeft;
         _userName.textColor = [UIColor orangeColor];
@@ -73,7 +73,7 @@
     
     if (!_commentTime) {
         
-        _commentTime = [[UILabel alloc] initWithFrame:CGRectMake(50, 30, 60, 10)];
+        _commentTime = [[UILabel alloc] initWithFrame:CGRectMake(50, 50, 60, 10)];
         _commentTime.text = @"评论时间";
         _commentTime.textAlignment = NSTextAlignmentLeft;
         _commentTime.textColor = [UIColor orangeColor];
@@ -87,11 +87,12 @@
     
     if (!_commentInfo) {
         
-        _commentInfo = [[UILabel alloc] initWithiPhoneFrame:CGRectMake(130, 10, 180, 50)];
+        _commentInfo = [[UILabel alloc] initWithiPhoneFrame:CGRectMake(130, 10, 160, 50)];
         _commentInfo.text = @"wefewfhjewhfhewihfuyreybgfyregfyrehvurehvruvn";
         _commentInfo.textAlignment = NSTextAlignmentLeft;
         _commentInfo.textColor = [UIColor orangeColor];
         _commentInfo.font = [UIFont systemFontOfSize:13];
+        _commentInfo.numberOfLines = 2;
     }
     return _commentInfo;
 }

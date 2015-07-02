@@ -17,11 +17,17 @@
 @property (strong, nonatomic) UILabel * detailShopAddress;// 店铺地址
 @property (strong, nonatomic) UILabel * detailShopClass;// 店铺类型
 @property (strong, nonatomic) UILabel * detailDistance;// 店铺具体离用户的距离
-
+@property (strong, nonatomic) UIButton * positionButton;// 定位按钮
+@property (strong, nonatomic) UILabel  * commentNum;// 评论数量
+@property (strong, nonatomic) UIButton * sayGoodButton;// 点赞按钮;
 
 @property (strong, nonatomic) UITableView * detailComment;// 评论回复列表
 
-@property (strong, nonatomic) UIButton * commentButton;// 发表评论按钮
+@property (strong, nonatomic) UIView * commentView;// 评论区域
+@property (strong, nonatomic) UITextView * commentTextView;// 撰写评论
+@property (strong, nonatomic) UIButton * commentButton;// 发送评论
+
+@property (strong, nonatomic) UIButton * backButton;// 界面返回按钮
 
 @end
 @implementation CustomDetailView
@@ -31,18 +37,27 @@
     self = [super initWithFrame:frame];
     if (self) {
        
-        self.backgroundColor = [UIColor blueColor];
+        self.backgroundColor = BASIC_COLOR;
         [self addSubview:self.detailShopImageView];
         [self addSubview:self.detailShopName];
         [self addSubview:self.detailShopAddress];
         [self addSubview:self.detailShopClass];
         [self addSubview:self.detailDistance];
+        [self addSubview:self.backButton];
+        [self addSubview:self.positionButton];
+        [self addSubview:self.commentNum];
+        [self addSubview:self.sayGoodButton];
+        
         [self addSubview:self.detailComment];
+        
+        [self addSubview:self.commentView];
+        [_commentView addSubview:self.commentTextView];
+        [_commentView addSubview:self.commentButton];
     }
     return self;
 }
 
-#pragma mark - 控件初始化
+#pragma mark - 店铺基本信息控件
 - (UIImageView *)detailShopImageView {
     
     if (!_detailShopImageView) {
@@ -71,11 +86,12 @@
     
     if (!_detailShopAddress) {
         
-        _detailShopAddress = [[UILabel alloc] initWithFrame:[FlexibleFrame frameWithiPhone5Frame:CGRectMake(120, 50, 150, 20)]];
+        _detailShopAddress = [[UILabel alloc] initWithFrame:[FlexibleFrame frameWithiPhone5Frame:CGRectMake(120, 50, 120, 20)]];
         _detailShopAddress.text = @"店铺具体地址";
         _detailShopAddress.textAlignment = NSTextAlignmentLeft;
-        _detailShopAddress.font = [UIFont systemFontOfSize:13];
+        _detailShopAddress.font = [UIFont systemFontOfSize:12];
         _detailShopAddress.textColor = [UIColor orangeColor];
+        _detailShopAddress.numberOfLines = 2;
     }
     return _detailShopAddress;
 }
@@ -97,16 +113,55 @@
     
     if (!_detailDistance) {
         
-        _detailDistance = [[UILabel alloc] initWithFrame:[FlexibleFrame frameWithiPhone5Frame:CGRectMake(120, 110, 150, 20)]];
+        _detailDistance = [[UILabel alloc] initWithFrame:[FlexibleFrame frameWithiPhone5Frame:CGRectMake(120, 110, 120, 20)]];
         _detailDistance.text = @"店铺距离客户的距离";
-        _detailDistance.font = [UIFont systemFontOfSize:13];
+        _detailDistance.font = [UIFont systemFontOfSize:12];
         _detailDistance.textAlignment = NSTextAlignmentLeft;
         _detailDistance.textColor = [UIColor purpleColor];
+        _detailDistance.numberOfLines = 2;
     }
     return _detailDistance;
 }
 
+- (UIButton *)positionButton {
+    
+    if (!_positionButton) {
+        
+        _positionButton = [[UIButton alloc] initWithiPhoneFrame:CGRectMake(280, 40, 30, 30)];
+        [_positionButton setImage:ImageWithName(@"大头针.png") forState:UIControlStateNormal];
+        _positionButton.tag = 100;
+        [_positionButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _positionButton;
+}
 
+- (UILabel *)commentNum {
+    
+    if (!_commentNum) {
+        
+        _commentNum = [[UILabel alloc] initWithiPhoneFrame:CGRectMake(270, 80, 50, 20)];
+        _commentNum.textAlignment = NSTextAlignmentLeft;
+        _commentNum.text = @"赞数";
+        _commentNum.textColor = [UIColor orangeColor];
+    }
+    return _commentNum;
+}
+
+- (UIButton *)sayGoodButton {
+    
+    if (!_sayGoodButton) {
+        
+        _sayGoodButton = [[UIButton alloc] initWithiPhoneFrame:CGRectMake(270, 100, 40, 40)];
+        [_sayGoodButton setTitle:@"点赞" forState:UIControlStateNormal];
+        _sayGoodButton.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [_sayGoodButton setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+        _sayGoodButton.tag = 101;
+        [_sayGoodButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _sayGoodButton;
+}
+
+#pragma mark - 评论展示区域的TableView
 - (UITableView *)detailComment {
 
     if (!_detailComment) {
@@ -119,23 +174,91 @@
     return _detailComment;
 }
 
+#pragma mark - 发表评论却区域控件
+- (UIView *)commentView {
+    
+    if (!_commentView) {
+        
+        _commentView = [[UIView alloc] initWithiPhoneFrame:CGRectMake(50, 520, 320 - 50, 40)];
+        _commentView.backgroundColor = [UIColor whiteColor];
+    }
+    return _commentView;
+}
 
-//- (UIButton *)commentButton {
-//    
-//    if (!_commentButton) {
-//        
-//        _commentButton = [UIButton alloc] initWithiPhoneFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
-//    }
-//}
+- (UITextView *)commentTextView {
+    
+    if (!_commentTextView) {
+        
+        _commentTextView = [[UITextView alloc] initWithiPhoneFrame:CGRectMake(0, 0, 230, 40)];
+        _commentTextView.backgroundColor = BASIC_COLOR;
+        _commentTextView.textAlignment = NSTextAlignmentLeft;
+        _commentTextView.textColor = [UIColor orangeColor];
+        _commentTextView.text = @"特备图标去大河比我好好吃不违反本为方便和一般我爸爸了解了解文本服务也不符合我并不wfhyewgbfyebgwygbryeyvgbrebregbirebguierbugbtrubgrebnutugeb";
+    }
+    return _commentTextView;
+}
+
+- (UIButton *)commentButton {
+    
+    if (!_commentButton) {
+        
+        _commentButton = [[UIButton alloc] initWithiPhoneFrame:CGRectMake(230, 0, 40, 40)];
+        [_commentButton setTitle:@"发表" forState:UIControlStateNormal];
+        _commentButton.backgroundColor = [UIColor orangeColor];
+    }
+    return _commentButton;
+}
+
+- (UIButton *)backButton {
+    
+    if (!_backButton) {
+        
+        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _backButton.frame = [FlexibleFrame frameWithiPhone5Frame:CGRectMake(0, 520, 40, 40)];
+        _backButton.backgroundColor = [UIColor orangeColor];
+        [_backButton setTitle:@"返回" forState:UIControlStateNormal];
+        _backButton.tag = 102;
+        [_backButton addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _backButton;
+}
+
+#pragma mark - 按钮点击事件
+- (void)buttonPressed:(UIButton *)sender {
+    
+    switch (sender.tag - 100) {
+        case 0:
+        {
+            NSLog(@"开始定位");
+        }
+            break;
+        case 1:
+        {
+         
+            NSLog(@"为店铺点赞");
+        }
+            break;
+        case 2:
+        {
+            
+            [self removeFromSuperview];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+
 #pragma mark - UITableViewDelegate/UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 1;
+    return 10;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -151,7 +274,15 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    
+    return 10;
+}
 
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section {
+    
+    view.tintColor = [UIColor clearColor];
+}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 70 * [FlexibleFrame ratio];
