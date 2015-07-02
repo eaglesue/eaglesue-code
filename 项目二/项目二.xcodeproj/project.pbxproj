@@ -64,6 +64,20 @@
 		180CD3211B44DDA000B68460 /* shouye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180CD3121B44DDA000B68460 /* shouye@2x.png */; };
 		180CD3221B44DDA000B68460 /* SinaWeiBo.png in Resources */ = {isa = PBXBuildFile; fileRef = 180CD3131B44DDA000B68460 /* SinaWeiBo.png */; };
 		180CD3231B44DDA000B68460 /* 大头针.png in Resources */ = {isa = PBXBuildFile; fileRef = 180CD3141B44DDA000B68460 /* 大头针.png */; };
+		180CD3401B45177100B68460 /* CameraSessionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD3271B45177100B68460 /* CameraSessionView.m */; };
+		180CD3411B45177100B68460 /* CameraDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD32B1B45177100B68460 /* CameraDismissButton.m */; };
+		180CD3421B45177100B68460 /* CameraFlashButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD32D1B45177100B68460 /* CameraFlashButton.m */; };
+		180CD3431B45177100B68460 /* CameraFocalReticule.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD32F1B45177100B68460 /* CameraFocalReticule.m */; };
+		180CD3441B45177100B68460 /* CameraShutterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD3311B45177100B68460 /* CameraShutterButton.m */; };
+		180CD3451B45177100B68460 /* CameraToggleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD3331B45177100B68460 /* CameraToggleButton.m */; };
+		180CD3461B45177100B68460 /* LaunchCameraButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD3351B45177100B68460 /* LaunchCameraButton.m */; };
+		180CD3471B45177100B68460 /* Cool Camera Mockup.sketch in Resources */ = {isa = PBXBuildFile; fileRef = 180CD3361B45177100B68460 /* Cool Camera Mockup.sketch */; };
+		180CD3481B45177100B68460 /* PaintCodeFile.pcvd in Resources */ = {isa = PBXBuildFile; fileRef = 180CD3371B45177100B68460 /* PaintCodeFile.pcvd */; };
+		180CD3491B45177100B68460 /* CameraStyleKitClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD33A1B45177100B68460 /* CameraStyleKitClass.m */; };
+		180CD34A1B45177100B68460 /* CaptureSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD33D1B45177100B68460 /* CaptureSessionManager.m */; };
+		180CD34B1B45177100B68460 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD33F1B45177100B68460 /* Constants.m */; };
+		180CD34D1B451FB600B68460 /* enjoy_添加图片.png in Resources */ = {isa = PBXBuildFile; fileRef = 180CD34C1B451FB600B68460 /* enjoy_添加图片.png */; };
+		180CD3511B4538D100B68460 /* SystemAdapt.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CD3501B4538D100B68460 /* SystemAdapt.m */; };
 		18226A931B428C19006C3594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18226A921B428C19006C3594 /* main.m */; };
 		18226A9C1B428C19006C3594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18226A9A1B428C19006C3594 /* Main.storyboard */; };
 		18226A9E1B428C19006C3594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18226A9D1B428C19006C3594 /* Images.xcassets */; };
@@ -178,6 +192,31 @@
 		180CD3121B44DDA000B68460 /* shouye@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shouye@2x.png"; sourceTree = "<group>"; };
 		180CD3131B44DDA000B68460 /* SinaWeiBo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SinaWeiBo.png; sourceTree = "<group>"; };
 		180CD3141B44DDA000B68460 /* 大头针.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "大头针.png"; sourceTree = "<group>"; };
+		180CD3261B45177100B68460 /* CameraSessionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraSessionView.h; sourceTree = "<group>"; };
+		180CD3271B45177100B68460 /* CameraSessionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraSessionView.m; sourceTree = "<group>"; };
+		180CD32A1B45177100B68460 /* CameraDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraDismissButton.h; sourceTree = "<group>"; };
+		180CD32B1B45177100B68460 /* CameraDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraDismissButton.m; sourceTree = "<group>"; };
+		180CD32C1B45177100B68460 /* CameraFlashButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFlashButton.h; sourceTree = "<group>"; };
+		180CD32D1B45177100B68460 /* CameraFlashButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFlashButton.m; sourceTree = "<group>"; };
+		180CD32E1B45177100B68460 /* CameraFocalReticule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraFocalReticule.h; sourceTree = "<group>"; };
+		180CD32F1B45177100B68460 /* CameraFocalReticule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraFocalReticule.m; sourceTree = "<group>"; };
+		180CD3301B45177100B68460 /* CameraShutterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraShutterButton.h; sourceTree = "<group>"; };
+		180CD3311B45177100B68460 /* CameraShutterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraShutterButton.m; sourceTree = "<group>"; };
+		180CD3321B45177100B68460 /* CameraToggleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraToggleButton.h; sourceTree = "<group>"; };
+		180CD3331B45177100B68460 /* CameraToggleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraToggleButton.m; sourceTree = "<group>"; };
+		180CD3341B45177100B68460 /* LaunchCameraButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchCameraButton.h; sourceTree = "<group>"; };
+		180CD3351B45177100B68460 /* LaunchCameraButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchCameraButton.m; sourceTree = "<group>"; };
+		180CD3361B45177100B68460 /* Cool Camera Mockup.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cool Camera Mockup.sketch"; sourceTree = "<group>"; };
+		180CD3371B45177100B68460 /* PaintCodeFile.pcvd */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = PaintCodeFile.pcvd; sourceTree = "<group>"; };
+		180CD3391B45177100B68460 /* CameraStyleKitClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStyleKitClass.h; sourceTree = "<group>"; };
+		180CD33A1B45177100B68460 /* CameraStyleKitClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraStyleKitClass.m; sourceTree = "<group>"; };
+		180CD33C1B45177100B68460 /* CaptureSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureSessionManager.h; sourceTree = "<group>"; };
+		180CD33D1B45177100B68460 /* CaptureSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureSessionManager.m; sourceTree = "<group>"; };
+		180CD33E1B45177100B68460 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		180CD33F1B45177100B68460 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		180CD34C1B451FB600B68460 /* enjoy_添加图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "enjoy_添加图片.png"; sourceTree = "<group>"; };
+		180CD34F1B4538D100B68460 /* SystemAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemAdapt.h; sourceTree = "<group>"; };
+		180CD3501B4538D100B68460 /* SystemAdapt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemAdapt.m; sourceTree = "<group>"; };
 		18226A8D1B428C19006C3594 /* 项目二.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "项目二.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18226A911B428C19006C3594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18226A921B428C19006C3594 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -320,12 +359,14 @@
 			children = (
 				180CD28C1B44D9A800B68460 /* CustomButton.h */,
 				180CD28D1B44D9A800B68460 /* CustomButton.m */,
+				180CD3241B45177100B68460 /* CustomizableCamera */,
 				180CD28E1B44D9A800B68460 /* DBSphereTagCloud */,
 				180CD2931B44D9A800B68460 /* IQKeyboardManager */,
 				180CD2BB1B44D9A800B68460 /* PortalTransition */,
 				180CD2C81B44D9A800B68460 /* 共用的cell */,
 				180CD2CB1B44D9A800B68460 /* 共用的店铺详情界面 */,
 				180CD2D11B44D9A800B68460 /* 屏幕适配 */,
+				180CD34E1B45385000B68460 /* 系统适配 */,
 			);
 			path = "项目工具";
 			sourceTree = "<group>";
@@ -497,6 +538,7 @@
 		180CD3051B44DDA000B68460 /* 素材 */ = {
 			isa = PBXGroup;
 			children = (
+				180CD34C1B451FB600B68460 /* enjoy_添加图片.png */,
 				180CD3061B44DDA000B68460 /* 3.jpg */,
 				180CD3071B44DDA000B68460 /* fenlei.png */,
 				180CD3081B44DDA000B68460 /* fenleiButton@2x.png */,
@@ -514,6 +556,84 @@
 				180CD3141B44DDA000B68460 /* 大头针.png */,
 			);
 			path = "素材";
+			sourceTree = "<group>";
+		};
+		180CD3241B45177100B68460 /* CustomizableCamera */ = {
+			isa = PBXGroup;
+			children = (
+				180CD3251B45177100B68460 /* Camera View */,
+				180CD3281B45177100B68460 /* Graphical Assets */,
+				180CD33B1B45177100B68460 /* Model Classes */,
+			);
+			path = CustomizableCamera;
+			sourceTree = "<group>";
+		};
+		180CD3251B45177100B68460 /* Camera View */ = {
+			isa = PBXGroup;
+			children = (
+				180CD3261B45177100B68460 /* CameraSessionView.h */,
+				180CD3271B45177100B68460 /* CameraSessionView.m */,
+			);
+			path = "Camera View";
+			sourceTree = "<group>";
+		};
+		180CD3281B45177100B68460 /* Graphical Assets */ = {
+			isa = PBXGroup;
+			children = (
+				180CD3291B45177100B68460 /* CameraViewComponents */,
+				180CD3361B45177100B68460 /* Cool Camera Mockup.sketch */,
+				180CD3371B45177100B68460 /* PaintCodeFile.pcvd */,
+				180CD3381B45177100B68460 /* UI Assets */,
+			);
+			path = "Graphical Assets";
+			sourceTree = "<group>";
+		};
+		180CD3291B45177100B68460 /* CameraViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				180CD32A1B45177100B68460 /* CameraDismissButton.h */,
+				180CD32B1B45177100B68460 /* CameraDismissButton.m */,
+				180CD32C1B45177100B68460 /* CameraFlashButton.h */,
+				180CD32D1B45177100B68460 /* CameraFlashButton.m */,
+				180CD32E1B45177100B68460 /* CameraFocalReticule.h */,
+				180CD32F1B45177100B68460 /* CameraFocalReticule.m */,
+				180CD3301B45177100B68460 /* CameraShutterButton.h */,
+				180CD3311B45177100B68460 /* CameraShutterButton.m */,
+				180CD3321B45177100B68460 /* CameraToggleButton.h */,
+				180CD3331B45177100B68460 /* CameraToggleButton.m */,
+				180CD3341B45177100B68460 /* LaunchCameraButton.h */,
+				180CD3351B45177100B68460 /* LaunchCameraButton.m */,
+			);
+			path = CameraViewComponents;
+			sourceTree = "<group>";
+		};
+		180CD3381B45177100B68460 /* UI Assets */ = {
+			isa = PBXGroup;
+			children = (
+				180CD3391B45177100B68460 /* CameraStyleKitClass.h */,
+				180CD33A1B45177100B68460 /* CameraStyleKitClass.m */,
+			);
+			path = "UI Assets";
+			sourceTree = "<group>";
+		};
+		180CD33B1B45177100B68460 /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				180CD33C1B45177100B68460 /* CaptureSessionManager.h */,
+				180CD33D1B45177100B68460 /* CaptureSessionManager.m */,
+				180CD33E1B45177100B68460 /* Constants.h */,
+				180CD33F1B45177100B68460 /* Constants.m */,
+			);
+			path = "Model Classes";
+			sourceTree = "<group>";
+		};
+		180CD34E1B45385000B68460 /* 系统适配 */ = {
+			isa = PBXGroup;
+			children = (
+				180CD34F1B4538D100B68460 /* SystemAdapt.h */,
+				180CD3501B4538D100B68460 /* SystemAdapt.m */,
+			);
+			path = "系统适配";
 			sourceTree = "<group>";
 		};
 		18226A841B428C19006C3594 = {
@@ -676,6 +796,7 @@
 				180CD3161B44DDA000B68460 /* fenlei.png in Resources */,
 				180CD31C1B44DDA000B68460 /* search.png in Resources */,
 				180CD31D1B44DDA000B68460 /* search@2x.png in Resources */,
+				180CD34D1B451FB600B68460 /* enjoy_添加图片.png in Resources */,
 				18226A9C1B428C19006C3594 /* Main.storyboard in Resources */,
 				18226AA11B428C19006C3594 /* LaunchScreen.xib in Resources */,
 				180CD2DD1B44D9A800B68460 /* AddNewShopView.xib in Resources */,
@@ -683,6 +804,7 @@
 				180CD2F11B44D9A800B68460 /* IQKeyboardManager.bundle in Resources */,
 				180CD3201B44DDA000B68460 /* shouye.png in Resources */,
 				180CD3031B44DC8300B68460 /* Podfile in Resources */,
+				180CD3481B45177100B68460 /* PaintCodeFile.pcvd in Resources */,
 				180CD3211B44DDA000B68460 /* shouye@2x.png in Resources */,
 				180CD31A1B44DDA000B68460 /* jian.png in Resources */,
 				180CD31B1B44DDA000B68460 /* jian@2x.png in Resources */,
@@ -693,6 +815,7 @@
 				180CD31E1B44DDA000B68460 /* search_background.png in Resources */,
 				180CD3171B44DDA000B68460 /* fenleiButton@2x.png in Resources */,
 				18226A9E1B428C19006C3594 /* Images.xcassets in Resources */,
+				180CD3471B45177100B68460 /* Cool Camera Mockup.sketch in Resources */,
 				180CD3221B44DDA000B68460 /* SinaWeiBo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -745,11 +868,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				180CD2D81B44D9A800B68460 /* RootViewController.m in Sources */,
+				180CD3491B45177100B68460 /* CameraStyleKitClass.m in Sources */,
 				180CD2FC1B44D9A800B68460 /* CommentTableViewCell.m in Sources */,
 				180CD2EE1B44D9A800B68460 /* IQTitleBarButtonItem.m in Sources */,
 				180CD2F81B44D9A800B68460 /* UINavigationController+PortalTransition.m in Sources */,
 				180CD2DC1B44D9A800B68460 /* AddNewShopView.m in Sources */,
 				180CD2EF1B44D9A800B68460 /* IQToolbar.m in Sources */,
+				180CD3511B4538D100B68460 /* SystemAdapt.m in Sources */,
+				180CD3451B45177100B68460 /* CameraToggleButton.m in Sources */,
+				180CD3411B45177100B68460 /* CameraDismissButton.m in Sources */,
 				180CD2F21B44D9A800B68460 /* LICENSE.md in Sources */,
 				180CD2EB1B44D9A800B68460 /* IQSegmentedNextPrevious.m in Sources */,
 				180CD2E71B44D9A800B68460 /* IQUIViewController+Additions.m in Sources */,
@@ -757,24 +884,31 @@
 				180CD2F01B44D9A800B68460 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				180CD2FE1B44D9A800B68460 /* UIView+Flexible.m in Sources */,
 				180CD2FD1B44D9A800B68460 /* FlexibleFrame.m in Sources */,
+				180CD3461B45177100B68460 /* LaunchCameraButton.m in Sources */,
 				180CD2E01B44D9A800B68460 /* LoginView.m in Sources */,
 				180CD2E91B44D9A800B68460 /* IQKeyboardManager.m in Sources */,
 				180CD2ED1B44D9A800B68460 /* IQBarButtonItem.m in Sources */,
 				180CD2E21B44D9A800B68460 /* CustomButton.m in Sources */,
+				180CD34B1B45177100B68460 /* Constants.m in Sources */,
+				180CD3441B45177100B68460 /* CameraShutterButton.m in Sources */,
 				180CD2FA1B44D9A800B68460 /* CustomTableViewCell.m in Sources */,
 				180CD2F31B44D9A800B68460 /* README.md in Sources */,
 				180CD2F51B44D9A800B68460 /* CYPortalTransitionAnimator.m in Sources */,
+				180CD3431B45177100B68460 /* CameraFocalReticule.m in Sources */,
 				180CD2F91B44D9A800B68460 /* UIViewController+PortalTransition.m in Sources */,
 				180CD2E61B44D9A800B68460 /* IQUIView+Hierarchy.m in Sources */,
 				180CD2EA1B44D9A800B68460 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				180CD2FB1B44D9A800B68460 /* CustomDetailView.m in Sources */,
+				180CD3401B45177100B68460 /* CameraSessionView.m in Sources */,
 				180CD2F61B44D9A800B68460 /* CYPortalTransitionContext.m in Sources */,
 				180CD2FF1B44D9A800B68460 /* AppDelegate.m in Sources */,
 				18226A931B428C19006C3594 /* main.m in Sources */,
 				180CD2D91B44D9A800B68460 /* ClassfiyButtonViewController.m in Sources */,
 				180CD2E51B44D9A800B68460 /* IQUITextFieldView+Additions.m in Sources */,
 				180CD2DB1B44D9A800B68460 /* SearchView.m in Sources */,
+				180CD34A1B45177100B68460 /* CaptureSessionManager.m in Sources */,
 				180CD2DE1B44D9A800B68460 /* RigisterView.m in Sources */,
+				180CD3421B45177100B68460 /* CameraFlashButton.m in Sources */,
 				180CD2DA1B44D9A800B68460 /* ClassInfoView.m in Sources */,
 				180CD2E81B44D9A800B68460 /* IQUIWindow+Hierarchy.m in Sources */,
 				180CD2EC1B44D9A800B68460 /* IQTextView.m in Sources */,

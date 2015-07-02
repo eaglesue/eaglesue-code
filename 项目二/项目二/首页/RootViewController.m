@@ -89,10 +89,14 @@
     self.animator = animator;
     
     // 分类按钮背景以及动画
-    [UIView animateWithDuration:15 animations:^{
-        
-        _buttonImageView.layer.transform = CATransform3DRotate(_buttonImageView.layer.transform, M_2_PI * 5, 0, 0, 1);
-    }];
+    
+    CABasicAnimation *basicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    basicAnimation.duration = 2;
+    basicAnimation.fromValue = @0;
+    basicAnimation.toValue = @(M_PI * 2);
+    basicAnimation.repeatCount = 1e100;
+    [_buttonImageView.layer addAnimation:basicAnimation forKey:@"rotate"];
+    
     [self.view addSubview:_buttonImageView];
     
 }

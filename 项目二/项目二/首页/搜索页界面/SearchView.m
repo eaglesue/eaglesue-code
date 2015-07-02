@@ -116,8 +116,7 @@
         {
             NSLog(@"进入添加店铺界面");
             
-            AddNewShopView *newShopView = [[[NSBundle mainBundle] loadNibNamed:@"AddNewShopView" owner:nil options:nil] lastObject];
-            newShopView.frame = [FlexibleFrame frameWithiPhone5Frame:CGRectMake(0, 0, 320, 565)];
+            AddNewShopView *newShopView = [[AddNewShopView alloc] initWithFrame:self.bounds];
             [self addSubview:newShopView];
         }
             break;
