@@ -234,17 +234,9 @@
 		180CD2711B44D9A800B68460 /* 分类按钮界面 */ = {
 			isa = PBXGroup;
 			children = (
-				180CD2721B44D9A800B68460 /* 分类信息界面 */,
 				180CD2731B44D9A800B68460 /* 分类按钮展示界面 */,
 			);
 			path = "分类按钮界面";
-			sourceTree = "<group>";
-		};
-		180CD2721B44D9A800B68460 /* 分类信息界面 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "分类信息界面";
 			sourceTree = "<group>";
 		};
 		180CD2731B44D9A800B68460 /* 分类按钮展示界面 */ = {
@@ -272,7 +264,6 @@
 				180CD27A1B44D9A800B68460 /* SearchView.h */,
 				180CD27B1B44D9A800B68460 /* SearchView.m */,
 				180CD27C1B44D9A800B68460 /* 搜索页展示界面 */,
-				180CD2811B44D9A800B68460 /* 添加店铺界面 */,
 			);
 			path = "搜索页界面";
 			sourceTree = "<group>";
@@ -291,13 +282,6 @@
 				180CD27E1B44D9A800B68460 /* AddNewShopView.h */,
 				180CD27F1B44D9A800B68460 /* AddNewShopView.m */,
 				180CD2801B44D9A800B68460 /* AddNewShopView.xib */,
-			);
-			path = "添加店铺界面";
-			sourceTree = "<group>";
-		};
-		180CD2811B44D9A800B68460 /* 添加店铺界面 */ = {
-			isa = PBXGroup;
-			children = (
 			);
 			path = "添加店铺界面";
 			sourceTree = "<group>";
